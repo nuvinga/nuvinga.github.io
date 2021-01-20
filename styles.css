@@ -8,7 +8,7 @@ html,body {
 
 .top-section {
     flex: 100vh;
-    flex-grow: full;
+    /*flex-grow: full;*/
 }
 
 h1,h2 {
@@ -21,6 +21,59 @@ h1 {
 h2 {
     color: #888;
     font-size: 2em;
+}
+
+.cv-button {
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    color: #b0b0b0;
+    background: none;
+    padding: 1vh 1vw;
+    border-radius: 5px;
+    border: 2px solid #5f5f5f;
+    text-decoration: none;
+    position: relative;
+    transition-duration: 0.3s;
+}
+
+button:hover{
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    border: 2px solid #969595;
+    background: none;
+    cursor: pointer !important;
+    text-decoration: none;
+}
+
+.icons {
+    align-items: flex-start;
+    padding: 3vh 0.3vw;
+}
+
+
+.icons i {
+    color: #5f5f5f;
+    background: #b0b0b0;
+    height: 15px;
+    width: 15px;
+    padding: 13px;
+    margin: 0 0.2vw;
+    border-radius: 50px;
+    border: 2px solid #b0b0b0;
+    transition: all 200ms ease;
+    text-decoration: none;
+    position: relative;
+}
+
+.icons i:hover, .icons i:active {
+    color: #b0b0b0;
+    background: none;
+    cursor: pointer !important;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    text-decoration: none;
+
 }
 
 
