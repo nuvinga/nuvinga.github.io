@@ -27,14 +27,11 @@ let TxtRotate = function(el, toRotate, period) {
 };
 
 TxtRotate.prototype.tick = function() {
+
     let i = this.loopNum % this.toRotate.length;
     let fullTxt = this.toRotate[i];
 
-    if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
+    this.isDeleting ? this.txt = fullTxt.substring(0, this.txt.length - 1): this.txt = fullTxt.substring(0, this.txt.length + 1);
 
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
@@ -53,4 +50,4 @@ TxtRotate.prototype.tick = function() {
     }
 
     setTimeout(function() { that.tick(); }, delta);
-};
+}

@@ -6,6 +6,11 @@ html,body {
     color: #aaa
 }
 
+.top-section {
+    flex: 100vh;
+    flex-grow: full;
+}
+
 h1,h2 {
     font-weight: 200;
     margin: 0.4em 0;
@@ -17,3 +22,5 @@ h2 {
     color: #888;
     font-size: 2em;
 }
+
+
