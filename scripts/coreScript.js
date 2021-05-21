@@ -13,16 +13,21 @@ window.addEventListener('load',function(){
 });
 
 
-window.addEventListener("scroll", function(){       
-  var scroll_pos = 0;
-  scroll_pos = $(this).scrollTop();
-      if(scroll_pos > 400) {
-          $("body").addClass('color-black');
-          document.querySelector('.navigation-banner').style.display = 'flex';
-      } else {
-          $("body").removeClass('color-black');
-          document.querySelector('.navigation-banner').style.display = 'none';
-      }
+window.addEventListener("scroll", function(){    
+    let windowSize = window.innerWidth;   
+    var scroll_pos = 0;
+    scroll_pos = $(this).scrollTop();
+    if(scroll_pos > 400) {
+        $("body").addClass('color-black');
+        if (windowSize > 1024) {
+            document.querySelector('.navigation-banner').style.display = 'flex';
+        }
+    } else {
+        $("body").removeClass('color-black');
+        if (windowSize > 1024) {
+            document.querySelector('.navigation-banner').style.display = 'none';
+        }
+    }
 });
 
 // Mobile Navigation expander

@@ -488,8 +488,10 @@ h5, p {
 
 .glimpse-brag .hire-me-button button {
     width: 20vw;
-    height: 8vh;
+    height: inherit;
     border-radius: 50em;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     font-family: "Poppins", sans-serif;
     background-color: #818181;
 }
@@ -677,6 +679,7 @@ footer {
 
 
 @media only screen and (max-width: 1024px) {
+
     .navigation-top .nav-link-two, .navigation-top .nav-link-one {
         display: none;
     }
@@ -756,6 +759,7 @@ footer {
     
     .glimpse-brag .hire-me-button button {
         width: 80vw;
+        height: inherit;
     }
     
 
@@ -769,7 +773,7 @@ footer {
     }
 
     .work-section-title h1 {
-        font-size: 15vh;
+        font-size: 23vw;
         letter-spacing: -0.05em;
         text-align: center;
     }
@@ -856,12 +860,17 @@ footer {
         height: 60vh;
     }
 
+    .freelance-brag-title {
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
     .freelance-title-one {
-        font-size: 2.5vh;
+        font-size: calc(40px + (280 - 140) * ((30vw - 300px) / (1920 - 300)));
     }
 
     .freelance-email {
-        font-size: 4.5vh;
+        font-size: 8vw;
         font-weight: 500;
     }
 
