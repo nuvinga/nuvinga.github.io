@@ -416,6 +416,13 @@ h5, p {
     font-weight: 300;
 }
 
+.hero-about-main .about-main-big a {
+    width: 40vw;
+    font-size: 2.7vh;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
 .hero-about-main .about-main-little {
     width: 33vw;
     font-size: 2vh;
